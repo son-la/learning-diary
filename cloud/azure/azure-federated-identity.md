@@ -24,3 +24,12 @@
 
  
 * Microsoft Entra ID is Microsoft AWS IAM equinivalent solution  
+
+* References: 
+
+  * Application library: https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview?tabs=python
+  * Azure best practice: https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-identity
+  * List of services supporting managed identity: https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-status
+
+* Design diagram
+![design diagram](managed-identity.png "Design diagram")
