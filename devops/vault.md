@@ -9,7 +9,15 @@
   * Unseal is required when vault is sealed (e.g.: after node's reboot, service restart)
   * Unseal requires 3/5 unseal keys
   * Login to each sealed vault node/ from UI
-  * Setup auto unseal
+  * Auto unseal with Azure Key Vault
+    * Service principal is created and allow access to Key Vault with `Key Vault Crypto User` role
+    * Azure KV is configured on `/etc/vault.d/vault.hcl` of each instance
+    * If Vault was initizilied, seal migration process is needed
+
+* AD integration.
+  * Creating Service principal in Azure and configure client_id and client_secret
+  * Rotate client_secret every 1 yr
+
 * Healthcheck
   * /v1/sys/health
 * Snapshot
