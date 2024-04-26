@@ -17,3 +17,4 @@ grep ^Limit /lib/systemd/system/containerd.service
 ### cgroup
 * Handle resource allocation and limitation for a process/ group of processes
 * cgroup v2 is officially supported since 1.20, but stable in 1.25 onward.  
+* #TODO: Read https://medium.com/@charles.vissol/cgroup-v2-in-details-8c138088f9ba

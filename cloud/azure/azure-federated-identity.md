@@ -12,9 +12,9 @@
   * Has OIDC discovery endpoint running at .well-known/openid-configuration 
 
   * This returns  
-
     * Issuer address 
     * jwks_uri  
+  * Install Azure WI https://azure.github.io/azure-workload-identity/charts
 
  
 
