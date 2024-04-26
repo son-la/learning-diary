@@ -1,0 +1,1 @@
+1. Detect failed/ error deployments in clusters and notify users
