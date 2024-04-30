@@ -4,11 +4,12 @@
 * chainsaw for e2e testing
 
 
-* Start cluster with 1 server, 3 agents, no traefik, with port mapping
+* Start cluster with 1 server, 3 agents, no traefik, with port mapping for nodeport
 ```
-k3d cluster create test-cluster --servers 1 --k3s-arg '--disable=servicelb@server:*'  --k3s-arg '--disable=traefik@server:*'
+k3d cluster create test-cluster --servers 1 --agents 3 -p "30000-30100:30000-30100@server:0"
 ```
 
+* TODO: Study metallb
 
 * Issue with k3d and vpn
 ```
