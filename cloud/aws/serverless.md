@@ -24,7 +24,14 @@
     * Shutdown
   * Developer optmizes function `pre-handler` and `handler`
 
-* Development tips:
+* Concurrency
+  * Handle 1 event per Lambda execution
+    * Batch pull from SQS, Kinesis Data Stream or DynamoDB Stream is 1 event
+* Observability
+  * Use structured JSON logging (EMF)
+  * Cloudwatch Lambda Insight   
+
+### Development tips:
   * Business logic code outside handler function
   * Don't include the whole aws-sdk, only include what's needed 
     * Avoid monolithic
