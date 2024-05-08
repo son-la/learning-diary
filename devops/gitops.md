@@ -3,7 +3,7 @@
 * Reference architecture
     * https://github.com/fluxcd/flux2-multi-tenancy
     * https://github.com/kingdonb/bootstrap-repo/tree/main/infrastructure
-
+    * https://github.com/son-la/gitops-reference-arch
 
 * Patching
   * Example for patching cniBinDir of istio-cni helm release. `op:add` means adding a leaf to `cniBinDir` to the existing `cni` branch
