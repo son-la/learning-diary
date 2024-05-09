@@ -39,3 +39,6 @@ patches:
     kind: ClusterPolicy
     name: scale-deployment-zero
 ```
+
+# GitOps testing
+![alt text](system-package-cicd.drawio.png "Testing diagram")
