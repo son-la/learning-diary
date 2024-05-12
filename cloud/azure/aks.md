@@ -1,3 +1,9 @@
+---
+layout: cloud/azure/aks
+title: "AKS"
+permalink: /cloud/azure/aks
+---
+
 ## Generic
 * Cannot access ETCD directly
 

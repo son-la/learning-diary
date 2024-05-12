@@ -1,6 +1,8 @@
+---
 layout: cloud/aws/serverless
 title: "Serverless"
 permalink: /cloud/aws/serverless
+---
 
 ### AWS Lambda 
 * Code invokation as a service :) 
