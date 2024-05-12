@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Database management"
+---
+
 ## Flyway community ver
 * No snapshot 
 * No undo  

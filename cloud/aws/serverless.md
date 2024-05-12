@@ -1,7 +1,6 @@
 ---
-layout: cloud/aws/serverless
+layout: page
 title: "Serverless"
-permalink: /cloud/aws/serverless
 ---
 
 ### AWS Lambda 

@@ -1,7 +1,6 @@
 ---
-layout: cloud/azure/aks
+layout: page
 title: "AKS"
-permalink: /cloud/azure/aks
 ---
 
 ## Generic
