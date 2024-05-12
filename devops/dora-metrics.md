@@ -1,3 +1,8 @@
+---
+layout: page
+title: "DORA metrics"
+---
+
 * Speed
   * Deployment frequency
   * Lead time for changes
