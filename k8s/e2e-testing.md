@@ -24,3 +24,41 @@
 
 ### Cleanup
 * Cleanup happens by default. First created -> Last deleted
+
+
+# Golang K8S SIG e2e framework
+
+## Overview
+
+* Use Golang test stdlib to manage test execution
+* Very well integrate with other Kubernetes projects. For example FluxCD:
+```
+import (
+  ...
+	kustomizev1 "github.com/fluxcd/kustomize-controller/api/v1"
+  ...
+)
+
+func WaitForHelmKustomizationToBeReady(name string, namespace string, timeoutInMinute int, ctx context.Context, t *testing.T, r *resources.Resources) error {
+	kustomizev1.AddToScheme(r.GetScheme())
+	kustomization := &kustomizev1.Kustomization{}
+
+	if err := r.Get(ctx, name, namespace, kustomization); err != nil {
+		t.Logf("Error getting resource %v\n", err)
+		t.Fatal("Could not get resource")
+		return err
+	}
+
+	if err := wait.For(conditions.New(r).ResourceMatch(kustomization, func(object k8s.Object) bool {
+		d := object.(*kustomizev1.Kustomization)
+		return meta.IsStatusConditionTrue(d.Status.Conditions, apimeta.ReadyCondition)
+	}), wait.WithTimeout(time.Minute*time.Duration(timeoutInMinute))); err != nil {
+		t.Fatalf("Timeout waiting for Kustomization %s/%s to be ready. Error: %v\n", namespace, name, err)
+		return err
+	}
+
+	return nil
+}
+
+
+```
