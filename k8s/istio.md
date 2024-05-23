@@ -12,7 +12,10 @@ Loadbalancer
 ## Istio cni
 * `istio-cni` needs to be enabled in `istiod`
 
+## Certificate management
+TODO: Read https://tetrate.io/blog/how-are-certificates-managed-in-istio/
 
+* Brings own CA when needs to setup meshes spanning multiple clusters
 
 ## Troubleshooting
 
