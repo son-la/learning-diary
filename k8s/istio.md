@@ -16,6 +16,21 @@ Loadbalancer
 TODO: Read https://tetrate.io/blog/how-are-certificates-managed-in-istio/
 
 * Brings own CA when needs to setup meshes spanning multiple clusters
+## Ambient mode
+* Beta mode March 2024
+
+## OTEL integration
+
+### Distributed tracing
+* Provided by Envoy
+* Ingress and Egress spans for each service
+
+### Access log
+* Proivded by Envoy
+* Ingress log only
+* By default -> stdout
+* Istio can export OTLP Enovy access logs via either gRPC or HTTP to OTEL collector
+* Access log is enabled -> Tracing spans are combined into single trace.
 
 ## Troubleshooting
 
