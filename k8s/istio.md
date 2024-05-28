@@ -24,6 +24,7 @@ TODO: Read https://tetrate.io/blog/how-are-certificates-managed-in-istio/
 ### Distributed tracing
 * Provided by Envoy
 * Ingress and Egress spans for each service
+* Example deployment ![Istio Tracing Diagram](istio-tracing.drawio.png)
 
 ### Access log
 * Proivded by Envoy
