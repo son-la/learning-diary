@@ -42,3 +42,12 @@ patches:
 
 # GitOps testing
 ![alt text](system-package-cicd.drawio.png "Testing diagram")
+
+## Benefit of OCI registry for GitOps
+
+* Pulling an OCI image is a much less resource-intensive process compared to cloning a Git repository, making it more efficient for deployment purposes.
+* High available registries are easier to deploy than Git servers, making it easy to access and deploy container images from any location.
+* OCI repositories can scale out similarly to a Content Delivery Network, enabling platform team to distribute configurations globally with ease.
+* Flux uses Kubernetes workload identity and IAM to pull OCI artifacts from managed registries. This eliminates the need for key management, SSH key generation, and proprietary * API usage for token generation. Instead, the same mechanism used for pulling container images for applications is used.
+* OCI images can be signed and verified during container deployment. Flux supports these verifications, out of the box.
+* REF : https://sestegra.medium.com/gitops-with-flux-leveraging-oci-registry-as-a-state-store-ffe28dd64836
