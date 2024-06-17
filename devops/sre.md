@@ -125,8 +125,36 @@ Toil
 
 ### Chapter 2: SRE mindset
 
-* Start with curiosity to explore different aspects
+* System context
+* Feedback loop
+* Customer focus 
+  > * How it works for *customer*
+  > * How it fails for *customer*
+* SRE relationship
+  > * Customer: Colab!
+  > * Failure & error: Ownership
+* Motion
+  > * How it work if we scale it?
+  > * How to reduce operational load?
+  > * How to make it work reliably for people?
 
-* Zoom out to see system perspective
-* Creating/ nurturing feedback loop
-* Focus on customer
+KEY: HOW TO COLLOBRATE WITH CUSTOMER FOR ON RELIABILITY?
+
+### Chapter 3: SRE Advocacy
+* Why
+  > * Survival
+  > * Identity
+* When
+  > * All the time :) 
+
+```
+SRE is engineering disciplines to achieve appropriate level of reliability for product/service in a sustainable way
+```
+
+### Chapter 4: SRE cuture
+* How
+  > * Give opportunity to reduce toil. Search or build tools.
+  > * Celebrate wins
+  > * Run postmotern. Incident handling/ review.
+    >> * Who is getting smarter?
+    >> * What do we do with the findings? 
