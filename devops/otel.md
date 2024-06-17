@@ -6,6 +6,23 @@
 * Kubernetes OTEL Operator injects instrument libraries into containers: https://opentelemetry.io/docs/kubernetes/operator/automatic/
 
 
+### Propagation
+
+* Mechanism to move data between services/ processes
+* Specifications: `w3c` and `b3`  
+### w3c
+* Developed/ maintained by W3C
+* https://www.w3.org/TR/trace-context/
+* OpenTelemetry follows W3C spec, while still support `b3`
+
+### b3
+* Developed by Zipkin
+* b3 concatenated: `b3: {TraceId}-{SpanId}-{SamplingState}-{ParentSpanId}`
+* b3 multi: `X-B3-TraceId` and `X-B3-SpanId`
+
+### Others
+* `jaeger`, Developed by Uber with `uber-*` format
+
 ## OTEL Protocol - OTLP
 
 * Specification https://opentelemetry.io/docs/specs/otlp/
