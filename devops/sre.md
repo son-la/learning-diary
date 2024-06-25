@@ -130,3 +130,40 @@ Toil
 * Zoom out to see system perspective
 * Creating/ nurturing feedback loop
 * Focus on customer
+
+
+### Chapter 4: Advocacy
+* Build the story
+    > * Know the audience and speak their language
+* Story ideas: reputation, possiblity, efficiency, surprise, transformation 
+* Collect ideas to share (Remember to ask permission to retell it)
+(!): Resilience engineering
+
+### Chapter 5: Preparing to become SRE
+* Coding
+* Fundamentals: single system, distributed system, statistics, data visualization, story telling, 
+
+
+### Chapter 11: Organizational factors for success
+* NOTE: This chapter has quite many useful questions to get to know the organization
+* Organization values are key for any success. 
+
+* F1: Identifying the real problem
+* F2: Identify willingess to solve problem
+* F3: Identify timeline/ patience to wait for improvement
+* F4: Collobration in organization (How easy to collab to get things change)
+* F5: Data-driven decision making
+* F6: Lesson learn/ post-motern culture
+* F7: How easy to make change
+* F8: Identify frictions in the system
+
+### Chapter 12: How SRE fails
+* Well many ways :) 
+
+### Chapter 13: Selling SRE
+* Developers taking production work v.s. dedicated production engineers with developer background
+* SRE investment is like insurance about outage risks
+* Audience:
+    > * Product manager: user aquisition, feature velocity
+    > * Finance: revenue growth for associated user acquisition
+    > * Sernior exec: How many minutes are willing to talk to unhappy customers about reliability issue? 
