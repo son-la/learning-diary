@@ -25,3 +25,7 @@
 
 * Restore
   * `https://developer.hashicorp.com/vault/tutorials/standard-procedures/sop-restore`
+ 
+
+ ## Vault policy
+ * Becareful with multiple policies: https://github.com/hashicorp/vault/issues/3892. More specific/ longer path takes over shorter (wildcard) one. 
