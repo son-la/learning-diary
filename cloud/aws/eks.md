@@ -22,3 +22,7 @@ https://karpenter.sh/
 ### Storage
 ReadWriteOnce, ebs-csi: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
 ReadWriteMany, efs-csi: https://github.com/kubernetes-sigs/aws-efs-csi-driver/tree/master
+
+
+### IAM role for Service ACcount (IRSA)
+* Equivalent to Managed Identity
